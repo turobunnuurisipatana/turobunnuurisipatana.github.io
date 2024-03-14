@@ -58,7 +58,7 @@ function renderNavMenu(){
     navMenu.innerHTML = `
         <nav class="navbar fixed-top navbar-expand-lg bg-success bg-gradient shadow" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#"><img src="${logoWeb}" alt="Logo" width="35px" class="rounded-circle me-2">${judulWeb}</a>
+                <a class="navbar-brand fw-bold" href="/"><img src="${logoWeb}" alt="Logo" width="35px" class="rounded-circle me-2">${judulWeb}</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,10 +76,10 @@ function renderNavMenu(){
 function renderMenu() {
     var ulMenu = document.querySelector('#ulMenu');
     let menu = [
-        {
-            judul: "Beranda",
-            link: "index.html",
-        },
+        // {
+        //     judul: "Beranda",
+        //     link: "/",
+        // },
         {
             judul: "Organisasi",
             link: "organisasi.html",
