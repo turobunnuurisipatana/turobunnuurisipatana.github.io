@@ -40,7 +40,7 @@ let jadwalSholat = [
     },
     {
         waktu : "Ashr",
-        jam : "15:06"
+        jam : "15:04"
     },
     {
         waktu : "Maghrib",
