@@ -1,0 +1,79 @@
+[
+    {
+        "tanggal": "10/1/23",
+        "uraian": "Saldo Awal",
+        "daftar": "tidak",
+        "masuk": 9917000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "10/6/23",
+        "uraian": "Kue dan 2 Dos Air Mineral",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 100000
+    },
+    {
+        "tanggal": "10/6/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 897000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "10/6/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "10/13/23",
+        "uraian": "Baterai",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 200000
+    },
+    {
+        "tanggal": "10/13/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 676000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "10/13/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "10/20/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 653000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "10/20/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "10/27/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 693000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "10/27/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    }
+]

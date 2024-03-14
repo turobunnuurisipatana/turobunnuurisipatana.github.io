@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTM Turobunnur Sipatana</title>
+    <link rel="icon" href="assets/images/logo turobunnur sipatana.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navMenu"></div>
+
+    <!-- Main Content -->
+    <section class="container mt-5 pt-5">
+        <div class="d-flex gap-4 justify-content-center mb-4">
+            <div class="ratio ratio-16x9 w-50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.44948260654!2d123.04899629724561!3d0.5821615405942853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32792c95dd575303%3A0x19332b1aafe88656!2sMasjid%20Turubunnuri!5e0!3m2!1sid!2sid!4v1708206048288!5m2!1sid!2sid" title="Lokasi" allowfullscreen loading="lazy" class="border border-3 border-success rounded shadow"></iframe>
+            </div>
+            <div class="w-50">
+                <form>
+                    <h4 class="h4 ms-2 mb-3 text-success fw-bold">Kirim pertanyaan, kritik dan saran anda!</h4>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control border-success shadow-sm" id="namalengkap" placeholder="Nama Lengkap">
+                                <label for="namalengkap">Nama Lengkap</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border-success shadow-sm" id="email" placeholder="nama@email.com">
+                                <label for="email">Alamat Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control border-success shadow-sm" placeholder="Masukkan pesan" id="pesan"></textarea>
+                        <label for="pesan">Masukkan pesan, kritik dan saran...</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-outline-success bg-gradient btn-block shadow-sm"><i class="bi bi-send me-2"></i>Kirim</button>
+                    </div>
+                </form>
+                <ul class="mt-4 small ps-0" id="ulKontak"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Running Text -->
+    <section id="runningText"></section>
+    
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="statis.js"></script>
+    <script src="kontak.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTM Turobunnur Sipatana</title>
+    <link rel="icon" href="assets/images/logo turobunnur sipatana.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navMenu"></div>
+
+    <!-- Main Cont -->
+    <section class="container mt-4 pt-5">
+        <div class="text-center d-flex justify-content-between align-items-center mb-4" role="alert">
+            <h3 class="h3 m-0 text-success fw-bold">Arus Kas Masjid</h3>
+            <form class="w-25">
+                <div class="input-group shadow">
+                    <select class="form-select border-success" id="selectBulan" onchange="tampilData()">
+                        <option value="" class="bg-success text-light fw-bold">Bulan</option>
+                        <option value="januari">Januari</option>
+                        <option value="februari">Februari</option>
+                        <option value="maret">Maret</option>
+                        <option value="april">April</option>
+                        <option value="mei">Mei</option>
+                        <option value="juni">Juni</option>
+                        <option value="juli">Juli</option>
+                        <option value="agustus">Agustus</option>
+                        <option value="september">September</option>
+                        <option value="oktober">Oktober</option>
+                        <option value="November">November</option>
+                        <option value="desember">Desember</option>
+                    </select>
+                    <select class="form-select border-success" id="selectTahun" onchange="tampilData()">
+                        <option value="" class="bg-success text-light fw-bold">Tahun</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                    <button class="btn btn-success border-success bg-gradient" id="tombolPilih" type="button" onclick="tampilData()"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div id="arusKas" class="pb-5">
+            <div class="alert alert-success shadow text-center" role="alert">Pilih Bulan dan Tahun terlebih dahulu!</div>
+        </div>
+    </section>
+
+    <!-- Running Text -->
+    <section id="runningText"></section>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="kas.js"></script>
+    <script src="statis.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+[
+    {
+        "tanggal": "2/3/23",
+        "uraian": "Saldo Awal",
+        "daftar": "tidak",
+        "masuk": 9054500,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/3/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 1005000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/3/23",
+        "uraian": "Baca Kitab",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 100000
+    },
+    {
+        "tanggal": "2/3/23",
+        "uraian": "Pengeluaran Rutin Mingguan",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 750000
+    },
+    {
+        "tanggal": "2/10/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 786000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/10/23",
+        "uraian": "Pengeluaran Rutin Mingguan",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 750000
+    },
+    {
+        "tanggal": "2/10/23",
+        "uraian": "Rokok",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 30000
+    },
+    {
+        "tanggal": "2/11/23",
+        "uraian": "Beli Pipa Paralon Arkus",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 250000
+    },
+    {
+        "tanggal": "2/14/23",
+        "uraian": "Acara Maulid",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 600000
+    },
+    {
+        "tanggal": "2/17/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 590000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/17/23",
+        "uraian": "Pengeluaran Rutin Mingguan",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 750000
+    },
+    {
+        "tanggal": "2/18/23",
+        "uraian": "Sisa Isra Mi'raj",
+        "daftar": "tidak",
+        "masuk": 100000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/24/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 583000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/24/23",
+        "uraian": "Pengeluaran Rutin Mingguan",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 750000
+    }
+]

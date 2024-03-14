@@ -1,0 +1,23 @@
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.nav-pills .active {
+    background-color: #198754 !important;
+    color: #fff;
+    font-weight: bold !important;
+}
+
+.nav-pills .nav-link {
+    color: #000;
+}
+
+.nav-tabs .active {
+    background-color: #198754 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.nav-tabs .nav-link {
+    color: #adb5bd;
+}

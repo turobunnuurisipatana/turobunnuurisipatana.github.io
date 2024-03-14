@@ -1,0 +1,114 @@
+[
+    {
+        "tanggal": "9/1/23",
+        "uraian": "Saldo Awal",
+        "daftar": "tidak",
+        "masuk": 11219000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/1/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 717000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/1/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "9/2/23",
+        "uraian": "Pembuatan Cap Masjid Turobunnur 2 Buah",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 300000
+    },
+    {
+        "tanggal": "9/8/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 610000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/8/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "9/16/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 572000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/16/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 660000
+    },
+    {
+        "tanggal": "9/22/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 735000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/22/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "9/23/23",
+        "uraian": "Pembersihan AC 11 Unit",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 750000
+    },
+    {
+        "tanggal": "9/28/23",
+        "uraian": "Pel Lantai",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 50000
+    },
+    {
+        "tanggal": "9/28/23",
+        "uraian": "Tambahan Maulid Nabi Muhammad SAW",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 395000
+    },
+    {
+        "tanggal": "9/29/23",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 1159000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "9/29/23",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 710000
+    },
+    {
+        "tanggal": "9/29/23",
+        "uraian": "Kipli P dan Maulid",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 100000
+    }
+]

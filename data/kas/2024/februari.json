@@ -1,0 +1,198 @@
+[
+    {
+        "tanggal": "2/1/24",
+        "uraian": "Saldo Awal",
+        "daftar": "tidak",
+        "masuk": 8740000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/2/24",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 763000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/2/24",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 810000
+    },
+    {
+        "tanggal": "2/7/24",
+        "uraian": "Belanja Peralatan Dapur",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 2089000
+    },
+    {
+        "tanggal": "2/7/24",
+        "uraian": "Beli Lampu 25 W",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 72000
+    },
+    {
+        "tanggal": "2/7/24",
+        "uraian": "MCB 40 A 2 Buah",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 222000
+    },
+    {
+        "tanggal": "2/8/24",
+        "uraian": "Sisa Dana Isra Mi'raj",
+        "daftar": "tidak",
+        "masuk": 1100000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/8/24",
+        "uraian": "Beli Air Mineral Gelas 4 Dos",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 100000
+    },
+    {
+        "tanggal": "2/9/24",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 925000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/9/24",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 810000
+    },
+    {
+        "tanggal": "2/16/24",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 941000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/16/24",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 810000
+    },
+    {
+        "tanggal": "2/17/24",
+        "uraian": "Aki Generator",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 944000
+    },
+    {
+        "tanggal": "2/17/24",
+        "uraian": "Oli Mesin S40",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 235000
+    },
+    {
+        "tanggal": "2/17/24",
+        "uraian": "Rokok",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 68000
+    },
+    {
+        "tanggal": "2/18/24",
+        "uraian": "Gembok",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 27000
+    },
+    {
+        "tanggal": "2/18/24",
+        "uraian": "Kran",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 24000
+    },
+    {
+        "tanggal": "2/18/24",
+        "uraian": "TBA",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 5000
+    },
+    {
+        "tanggal": "2/18/24",
+        "uraian": "Tambahan Kran",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 27000
+    },
+    {
+        "tanggal": "2/18/24",
+        "uraian": "Solar Genset",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 170000
+    },
+    {
+        "tanggal": "2/23/24",
+        "uraian": "Kotak Amal",
+        "daftar": "tidak",
+        "masuk": 714000,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/23/24",
+        "uraian": "Pengeluaran Rutin",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 810000
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Pekerja Cuci AC",
+        "daftar": "tidak",
+        "masuk": 0,
+        "keluar": 0
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Kopi + Gula",
+        "daftar": "ya",
+        "masuk": 0,
+        "keluar": 15000
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Kue",
+        "daftar": "ya",
+        "masuk": 0,
+        "keluar": 30000
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Rokok 2 Bungkus",
+        "daftar": "ya",
+        "masuk": 0,
+        "keluar": 68000
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Nutrisari",
+        "daftar": "ya",
+        "masuk": 0,
+        "keluar": 10000
+    },
+    {
+        "tanggal": "2/25/24",
+        "uraian": "Nasi 10 Bungkus",
+        "daftar": "ya",
+        "masuk": 0,
+        "keluar": 130000
+    }
+]

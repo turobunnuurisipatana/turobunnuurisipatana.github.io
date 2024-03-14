@@ -1,0 +1,393 @@
+[
+    {
+        "tahun" : 2023,
+        "dataTahun" : [
+            {
+                "bulan":"Januari",
+                "dataBulan": [
+                    {
+                        "tanggal": "1/1/23",
+                        "uraian": "Saldo Awal",
+                        "daftar": "tidak",
+                        "masuk": 9029500,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 1044000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Token Listrik",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 110000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Bahan Kebersihan",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 100000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Khotib",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 100000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Muadzin",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 50000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Sudi",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 250000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Amin P.",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 50000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Toni / Rawatib",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 35000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Idun",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 25000
+                    },
+                    {
+                        "tanggal": "1/13/23",
+                        "uraian": "Utam",
+                        "daftar": "ya",
+                        "masuk": 0,
+                        "keluar": 30000
+                    },
+                    {
+                        "tanggal": "1/20/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 644000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "1/20/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    },
+                    {
+                        "tanggal": "1/20/23",
+                        "uraian": "Semprot Anti Serangga (Baigon)",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 20000
+                    },
+                    {
+                        "tanggal": "1/27/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 607000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "1/27/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    }
+                ]
+            },
+            {
+                "bulan":"Februari",
+                "dataBulan": [
+                    {
+                        "tanggal": "2/3/23",
+                        "uraian": "Saldo Awal",
+                        "daftar": "tidak",
+                        "masuk": 9054500,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/3/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 1005000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/3/23",
+                        "uraian": "Baca Kitab",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 100000
+                    },
+                    {
+                        "tanggal": "2/3/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    },
+                    {
+                        "tanggal": "2/10/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 786000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/10/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    },
+                    {
+                        "tanggal": "2/10/23",
+                        "uraian": "Rokok",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 30000
+                    },
+                    {
+                        "tanggal": "2/11/23",
+                        "uraian": "Beli Pipa Paralon Arkus",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 250000
+                    },
+                    {
+                        "tanggal": "2/14/23",
+                        "uraian": "Acara Maulid",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 600000
+                    },
+                    {
+                        "tanggal": "2/17/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 590000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/17/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    },
+                    {
+                        "tanggal": "2/18/23",
+                        "uraian": "Sisa Isra Mi'raj",
+                        "daftar": "tidak",
+                        "masuk": 100000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/24/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 583000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "2/24/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    }
+                ]
+            },
+            {
+                "bulan":"Maret",
+                "dataBulan": [
+                    {
+                        "tanggal": "3/5/23",
+                        "uraian": "Saldo Awal",
+                        "daftar": "tidak",
+                        "masuk": 8138500,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/5/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 687000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/5/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 750000
+                    },
+                    {
+                        "tanggal": "3/6/23",
+                        "uraian": "Doa Nibsu Sa'ban",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 500000
+                    },
+                    {
+                        "tanggal": "3/10/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 500000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/10/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 695000
+                    },
+                    {
+                        "tanggal": "3/12/23",
+                        "uraian": "Pangkas Rumput + Rokok, Cuci AC / Engko",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 200000
+                    },
+                    {
+                        "tanggal": "3/13/23",
+                        "uraian": "Beli Spul TBA/SD",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 400000
+                    },
+                    {
+                        "tanggal": "3/14/23",
+                        "uraian": "Bahan Pengecatan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 1500000
+                    },
+                    {
+                        "tanggal": "3/15/23",
+                        "uraian": "Tambah Bahan Pengecatan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 300000
+                    },
+                    {
+                        "tanggal": "3/17/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 693500,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/17/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 665000
+                    },
+                    {
+                        "tanggal": "3/18/23",
+                        "uraian": "Bayar Tukang Cat (6 Orang)",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 2050000
+                    },
+                    {
+                        "tanggal": "3/20/23",
+                        "uraian": "Brikat + Peralatan, Doa Tahlilan Puasa",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 100000
+                    },
+                    {
+                        "tanggal": "3/21/23",
+                        "uraian": "Alat Listrik",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 50000
+                    },
+                    {
+                        "tanggal": "3/24/23",
+                        "uraian": "Beli Tas Plastik / Engko",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 50000
+                    },
+                    {
+                        "tanggal": "3/24/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 790000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/24/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 710000
+                    },
+                    {
+                        "tanggal": "3/25/23",
+                        "uraian": "MCB / Sudi",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 100000
+                    },
+                    {
+                        "tanggal": "3/31/23",
+                        "uraian": "Kotak Amal",
+                        "daftar": "tidak",
+                        "masuk": 888000,
+                        "keluar": 0
+                    },
+                    {
+                        "tanggal": "3/31/23",
+                        "uraian": "Pengeluaran Rutin Mingguan",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 655000
+                    },
+                    {
+                        "tanggal": "3/31/23",
+                        "uraian": "Brikat",
+                        "daftar": "tidak",
+                        "masuk": 0,
+                        "keluar": 20000
+                    }
+                ]
+            }
+        ]
+    }
+]
