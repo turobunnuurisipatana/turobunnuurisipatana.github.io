@@ -13,8 +13,9 @@ iconWeb.setAttribute('href',logoWeb);
 // List Kontak
 let dataAlamat = "Jl. Yusuf Hasiru No.686, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96139";
 let dataTelepon = "6281234567890";
-let dataEmail = "turabunnuuri.sipatana@gmail.com";
-let dataWebsite = "turabunnuurisipatana.github.io";
+let dataEmail = "turobunnuuri.sipatana@gmail.com";
+let dataWebsite = "turobunnuurisipatana.github.io";
+let dataGithub = "turobunnuurisipatana";
 
 // JADWAL SHOLAT
 let jadwalSholat = [
@@ -113,6 +114,7 @@ function renderRunningText() {
         `<i class="bi bi-whatsapp m-0"></i> +${dataTelepon}`,
         `<i class="bi bi-envelope-at m-0"></i> ${dataEmail}`,
         `<i class="bi bi-browser-chrome m-0"></i> ${dataWebsite}`,
+        `<i class="bi bi-github m-0"></i> @${dataGithub}`,
         "BTM Turobunnur Sipatana",
     ];
     let liRT = `<div class="bg-success-subtle fixed-bottom shadow py-2 small" role="alert"><marquee class="m-0 d-flex align-item-center">`;
