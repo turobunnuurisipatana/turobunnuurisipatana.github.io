@@ -1,3 +1,50 @@
+// Jadwal Imsak
+async function jadwalImsak(){
+    let responseJadwalImsak = await fetch(`data/jadwalimsak.json`);
+    let dataJadwalImsak = await responseJadwalImsak.json();
+    var listJadwalSholat = document.querySelector('#listJadwalSholat');
+    let liJadwalSholat = "";
+    dataJadwalImsak.forEach((ji) => {
+        if(formatTanggal(ji.tanggal) == formatTanggal(new Date())){
+            liJadwalSholat += `<li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Imsyak</span>
+                                <span>${ji.imsyak}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Subuh</span>
+                                <span>${ji.subuh}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Terbit Fajar</span>
+                                <span>${ji.terbit}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Dhuha</span>
+                                <span>${ji.dhuha}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Dzuhur</span>
+                                <span>${ji.dzuhur}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Ashr</span>
+                                <span>${ji.ashr}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Maghrib</span>
+                                <span>${ji.maghrib}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between py-0">
+                                <span class="fw-bold text-success">Isya</span>
+                                <span>${ji.isya}</span>
+                            </li>`;
+        }
+    })
+    listJadwalSholat.innerHTML = liJadwalSholat;
+}
+
+jadwalImsak()
+
 // List Jadwal Sholat
 function renderJadwalSholat(){
     var listJadwalSholat = document.querySelector('#listJadwalSholat');
@@ -46,4 +93,4 @@ async function renderArusKas(){
 
 // Render
 renderArusKas();
-renderJadwalSholat();
+// renderJadwalSholat();

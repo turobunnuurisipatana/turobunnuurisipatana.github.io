@@ -82,6 +82,10 @@ function renderMenu() {
         //     link: "/",
         // },
         {
+            judul: "Jadwal Sholat",
+            link: "jadwalsholat.html",
+        },
+        {
             judul: "Organisasi",
             link: "organisasi.html",
         },
@@ -106,7 +110,9 @@ function renderMenu() {
 }
 
 // Running Text
-function renderRunningText() {
+async function renderRunningText() {
+    let responseJadIm = await fetch(`data/jadwalimsak.json`);
+    let dataJadIm = await responseJadIm.json();
     var runningText = document.querySelector('#runningText');
     let listText = [
         "BTM Turobunnur Sipatana",
@@ -119,8 +125,17 @@ function renderRunningText() {
     ];
     let liRT = `<div class="bg-success-subtle fixed-bottom shadow py-2 small" role="alert"><marquee class="m-0 d-flex align-item-center">`;
     liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Jadwal Sholat Hari Ini :`;
-    jadwalSholat.forEach((js) => {
-        liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">${js.waktu} : ${js.jam}`;
+    dataJadIm.forEach((js) => {
+        if(formatTanggal(js.tanggal) == formatTanggal(new Date())){
+            liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Imsyak : ${js.imsyak}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Subuh : ${js.subuh}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Terbit Fajar : ${js.terbit}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Dhuha : ${js.dhuha}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Dzuhur : ${js.dzuhur}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Ashr : ${js.ashr}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Maghrib : ${js.maghrib}
+                    <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Isya : ${js.isya}`;
+        }
     });
     for (let t = 0; t < listText.length; t++) {
         liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">${listText[t]}`;
