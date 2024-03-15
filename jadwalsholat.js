@@ -1,15 +1,9 @@
 // Jadwal Sholat
 let periodeJadwalSholat = document.querySelector("#periodeJadwalSholat");
-let waktu = new Date();
-let bln = waktu.getMonth();
-const namaBulan = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-let bulan = namaBulan[bln];
-let tahun = waktu.getFullYear();
-
 periodeJadwalSholat.innerHTML = `Bulan ${bulan} ${tahun}`;
 
-async function renderJadwalSholat(){
-    let resJadwalSholat = await fetch(`data/jadwalimsak.json`);
+async function renderJadwalSholat(th, bl){
+    let resJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
     let dataJadwalSholat = await resJadwalSholat.json();
     let divJadwalSholat = document.querySelector("#divJadwalSholat");
     let isiJadwalSholat = "";
@@ -98,4 +92,4 @@ async function renderJadwalSholat(){
     divJadwalSholat.innerHTML = isiJadwalSholat;
 }
 
-renderJadwalSholat();
+renderJadwalSholat(tahun, bulan);

@@ -1,57 +1,10 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-// Website
-var judulWeb = "BTM Turobunnuur Sipatana";
-var logoWeb = "assets/images/logo turobunnur sipatana.png";
-
 // Initialized
 document.title = judulWeb;
 let iconWeb = document.querySelector("link[rel='icon']");
 iconWeb.setAttribute('href',logoWeb);
-
-// List Kontak
-let dataAlamat = "Jl. Yusuf Hasiru No.686, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96139";
-let dataTelepon = "6281234567890";
-let dataEmail = "turobunnuuri.sipatana@gmail.com";
-let dataWebsite = "turobunnuurisipatana.github.io";
-let dataGithub = "turobunnuurisipatana";
-
-// JADWAL SHOLAT
-let jadwalSholat = [
-    {
-        waktu : "Imsyak",
-        jam : "04:29"
-    },
-    {
-        waktu : "Shubuh",
-        jam : "04:39"
-    },
-    {
-        waktu : "Terbit Fajar",
-        jam : "05:52"
-    },
-    {
-        waktu : "Dhuha",
-        jam : "06:16"
-    },
-    {
-        waktu : "Dzuhur",
-        jam : "11:59"
-    },
-    {
-        waktu : "Ashr",
-        jam : "15:04"
-    },
-    {
-        waktu : "Maghrib",
-        jam : "18:02"
-    },
-    {
-        waktu : "Isya",
-        jam : "19:11"
-    }
-]
 
 // Navbar
 function renderNavMenu(){
@@ -110,9 +63,9 @@ function renderMenu() {
 }
 
 // Running Text
-async function renderRunningText() {
-    let responseJadIm = await fetch(`data/jadwalimsak.json`);
-    let dataJadIm = await responseJadIm.json();
+async function renderRunningText(th, bl) {
+    let responseJadShl = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
+    let dataJadShl = await responseJadShl.json();
     var runningText = document.querySelector('#runningText');
     let listText = [
         "BTM Turobunnur Sipatana",
@@ -124,8 +77,8 @@ async function renderRunningText() {
         "BTM Turobunnur Sipatana",
     ];
     let liRT = `<div class="bg-success-subtle fixed-bottom shadow py-2 small" role="alert"><marquee class="m-0 d-flex align-item-center">`;
-    liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Jadwal Sholat Hari Ini :`;
-    dataJadIm.forEach((js) => {
+    liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Jadwal Sholat Hari Ini : ${hari}, ${tanggal} ${bulan} ${tahun}`;
+    dataJadShl.forEach((js) => {
         if(formatTanggal(js.tanggal) == formatTanggal(new Date())){
             liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Imsyak : ${js.imsyak}
                     <img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Subuh : ${js.subuh}
@@ -147,7 +100,7 @@ async function renderRunningText() {
 // Render
 renderNavMenu();
 renderMenu();
-renderRunningText();
+renderRunningText(tahun, bulan);
 
 // Waktu
 let divWaktu = document.querySelector('#divWaktu');

@@ -5,13 +5,6 @@ var tombolPilih = document.querySelector("#tombolPilih");
 var divArusKas = document.querySelector("#arusKas");
 let isiArusKas = "";
 
-// SELECT
-let waktu = new Date();
-let bln = waktu.getMonth();
-const namaBulan = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-let bulan = namaBulan[bln];
-let tahun = waktu.getFullYear();
-
 selectBulan.value = bulan.toLowerCase();
 selectTahun.value = tahun;
 // TOMBOL PILIH

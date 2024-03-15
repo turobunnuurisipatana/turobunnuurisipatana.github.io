@@ -1,10 +1,10 @@
-// Jadwal Imsak
-async function jadwalImsak(){
-    let responseJadwalImsak = await fetch(`data/jadwalimsak.json`);
-    let dataJadwalImsak = await responseJadwalImsak.json();
+// Jadwal Sholat
+async function renderJadwalSholat(th, bl){
+    let responseJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
+    let dataJadwalSholat = await responseJadwalSholat.json();
     var listJadwalSholat = document.querySelector('#listJadwalSholat');
     let liJadwalSholat = "";
-    dataJadwalImsak.forEach((ji) => {
+    dataJadwalSholat.forEach((ji) => {
         if(formatTanggal(ji.tanggal) == formatTanggal(new Date())){
             liJadwalSholat += `<li class="list-group-item d-flex justify-content-between py-0">
                                 <span class="fw-bold text-success">Imsyak</span>
@@ -43,31 +43,10 @@ async function jadwalImsak(){
     listJadwalSholat.innerHTML = liJadwalSholat;
 }
 
-jadwalImsak()
-
-// List Jadwal Sholat
-function renderJadwalSholat(){
-    var listJadwalSholat = document.querySelector('#listJadwalSholat');
-    let liJadwalSholat = "";
-    jadwalSholat.forEach((js) => {
-        liJadwalSholat += `<li class="list-group-item d-flex justify-content-between py-0">
-                                <span class="fw-bold text-success">${js.waktu}</span>
-                                <span>${js.jam}</span>
-                            </li>`;
-    });
-    listJadwalSholat.innerHTML = liJadwalSholat;
-}
-
 // Arus Kas
-async function renderArusKas(){
+async function renderArusKas(t,b){
     var berandaKas = document.querySelector('#berandaKas');
-    let waktu = new Date();
-    let bln = waktu.getMonth();
-    const namaBulan = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-    let bulan = namaBulan[bln-1];
-    let tahun = waktu.getFullYear();
-
-    let response = await fetch(`data/kas/${tahun}/${bulan.toLowerCase()}.json`);
+    let response = await fetch(`data/kas/${t}/${b}.json`);
     let data = await response.json();
     let tMasuk = 0;
     let tKeluar = 0;
@@ -91,6 +70,56 @@ async function renderArusKas(){
                             </li>`;
 }
 
+// Jadwal Buka Puasa
+async function renderBukaPuasa(th){
+    let responseBukaPuasa = await fetch(`data/bukapuasa/${th}.json`);
+    let dataBukaPuasa = await responseBukaPuasa.json();
+    var listBukaPuasa = document.querySelector('#listBukaPuasa');
+    var modalContentBukaPuasa = document.querySelector('#modalContentBukaPuasa');
+    let liBukaPuasa = "";
+    let contentBukaPuasa = "";
+    contentBukaPuasa = `<div class="modal-header d-flex justify-content-between align-items-center bg-success bg-gradient text-light py-2 px-3">
+                            <h1 class="modal-title fs-5" id="modalBukaPuasaLabel">Jadwal Buka Puasa Ramadhan ${th} H</h1>
+                            <div>
+                                <a href="cetak_jadwal_puasa.html?tahun=${th}" target="_blank" class="btn btn-sm btn-warning bg-gradient" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cetak"><i class="bi bi-printer"></i></a>
+                                <a href="#" class="btn btn-sm btn-danger bg-gradient" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cetak" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></a>
+                            </div>
+                        </div>
+                        <div class="modal-body table-responsive p-0">
+                            <table class="table table-bordered border border-success table-striped m-0">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-success-subtle">HARI KE</th>
+                                        <th class="bg-success-subtle">TANGGAL</th>
+                                        <th class="bg-success-subtle">NAMA PELAKSANA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>`;   
+    dataBukaPuasa.forEach((bp) => {
+        if(formatTanggal(bp.masehi) == formatTanggal(new Date())){
+            liBukaPuasa += `<div class="d-flex justify-content-between align-items-center m-0 p-0">
+                                <div class="m-0 p-0">
+                                    <a href="#modalBukaPuasa" data-bs-toggle="modal" class="text-muted small m-0 text-decoration-none">Jadwal Buka Puasa : </a>
+                                    <span class="m-0 badge rounded-pill text-bg-success">${formatTanggal(bp.masehi)}</span>
+                                    <span class="m-0 badge rounded-pill text-bg-success">${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah} Ramadhan ${tahunHijriah}H</span>
+                                </div>
+                                <span class="text-success fw-bold m-0">${bp.nama}</span>
+                            </div>`;
+        }
+        contentBukaPuasa += `<tr>
+                                <td>${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah}</td>
+                                <td>${formatTanggal(bp.masehi)}</td>
+                                <td>${bp.nama}</td>
+                            </tr>`;
+    })
+    contentBukaPuasa += `</tbody>
+                        </table>
+                    </div>`;
+    listBukaPuasa.innerHTML = liBukaPuasa;
+    modalContentBukaPuasa.innerHTML = contentBukaPuasa;
+}
+
 // Render
-renderArusKas();
-// renderJadwalSholat();
+renderJadwalSholat(tahun, bulan);
+renderArusKas(tahun, bulan);
+renderBukaPuasa(tahun);
