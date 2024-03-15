@@ -46,7 +46,7 @@ async function renderJadwalSholat(th, bl){
 // Arus Kas
 async function renderArusKas(t,b){
     var berandaKas = document.querySelector('#berandaKas');
-    let response = await fetch(`data/kas/${t}/${b}.json`);
+    let response = await fetch(`data/kas/${t}/${b.toLowerCase()}.json`);
     let data = await response.json();
     let tMasuk = 0;
     let tKeluar = 0;
