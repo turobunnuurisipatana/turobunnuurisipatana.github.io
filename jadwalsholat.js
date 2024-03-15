@@ -3,7 +3,7 @@ let periodeJadwalSholat = document.querySelector("#periodeJadwalSholat");
 periodeJadwalSholat.innerHTML = `Bulan ${bulan} ${tahun}`;
 
 async function renderJadwalSholat(th, bl){
-    let resJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
+    let resJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl.toLowerCase()}.json`);
     let dataJadwalSholat = await resJadwalSholat.json();
     let divJadwalSholat = document.querySelector("#divJadwalSholat");
     let isiJadwalSholat = "";

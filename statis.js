@@ -64,7 +64,7 @@ function renderMenu() {
 
 // Running Text
 async function renderRunningText(th, bl) {
-    let responseJadShl = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
+    let responseJadShl = await fetch(`data/jadwalsholat/${th}/${bl.toLowerCase()}.json`);
     let dataJadShl = await responseJadShl.json();
     var runningText = document.querySelector('#runningText');
     let listText = [

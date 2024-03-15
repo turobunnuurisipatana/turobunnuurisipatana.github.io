@@ -1,6 +1,6 @@
 // Jadwal Sholat
 async function renderJadwalSholat(th, bl){
-    let responseJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl}.json`);
+    let responseJadwalSholat = await fetch(`data/jadwalsholat/${th}/${bl.toLowerCase()}.json`);
     let dataJadwalSholat = await responseJadwalSholat.json();
     var listJadwalSholat = document.querySelector('#listJadwalSholat');
     let liJadwalSholat = "";
