@@ -78,6 +78,7 @@ async function renderBukaPuasa(th){
     var modalContentBukaPuasa = document.querySelector('#modalContentBukaPuasa');
     let liBukaPuasa = "";
     let contentBukaPuasa = "";
+    let warnaTr = "";
     contentBukaPuasa = `<div class="modal-header d-flex justify-content-between align-items-center bg-success bg-gradient text-light py-2 px-3">
                             <h1 class="modal-title fs-5" id="modalBukaPuasaLabel">Jadwal Buka Puasa Ramadhan ${th} H</h1>
                             <div>
@@ -86,7 +87,7 @@ async function renderBukaPuasa(th){
                             </div>
                         </div>
                         <div class="modal-body table-responsive p-0">
-                            <table class="table table-bordered border border-success table-striped m-0">
+                            <table class="table table-bordered border border-success m-0">
                                 <thead>
                                     <tr>
                                         <th class="text-center bg-success-subtle">HARI KE</th>
@@ -105,11 +106,14 @@ async function renderBukaPuasa(th){
                                 </div>
                                 <span class="text-success fw-bold m-0">${bp.nama}</span>
                             </div>`;
+            warnaTr = "text-success fw-bold h5";
+        }else{
+            warnaTr = "";
         }
         contentBukaPuasa += `<tr>
-                                <td class="text-center">${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah}</td>
-                                <td class="text-center">${formatTanggal(bp.masehi)}</td>
-                                <td>${bp.nama}</td>
+                                <td class="text-center ${warnaTr}">${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah}</td>
+                                <td class="text-center ${warnaTr}">${formatTanggal(bp.masehi)}</td>
+                                <td class="${warnaTr}">${bp.nama}</td>
                             </tr>`;
     })
     contentBukaPuasa += `</tbody>
