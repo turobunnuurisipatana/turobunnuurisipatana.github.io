@@ -43,11 +43,27 @@
                         <option value="2024">2024</option>
                     </select>
                     <button class="btn btn-success border-success bg-gradient" id="tombolPilih" type="button" onclick="tampilData()"><i class="bi bi-search"></i></button>
+                    <a href="#modalInputKas" data-bs-toggle="modal" class="btn btn-success border-success bg-gradient"><i class="bi bi-plus-lg"></i> Input</a>
                 </div>
             </form>
         </div>
         <div id="arusKas" class="pb-5">
             <div class="alert alert-success shadow text-center" role="alert">Pilih Bulan dan Tahun terlebih dahulu!</div>
+        </div>
+
+        <!-- Modal Input Kas -->
+        <div class="modal fade" id="modalInputKas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalInputKasLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between align-items-center bg-success bg-gradient text-light py-2 px-3">
+                        <h1 class="modal-title fs-5" id="modalBukaPuasaLabel">Input Kas Masjid</h1>
+                        <a href="#" class="btn btn-sm btn-danger bg-gradient" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cetak" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></a>
+                    </div>
+                    <div class="modal-body p-0">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHeCjttuBAlE7xrPe5l-n-cUbssi5Szjn6e2yMdLIb90fPUg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
