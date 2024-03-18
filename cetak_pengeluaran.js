@@ -14,7 +14,7 @@ async function jsonKas(tahun, bulan) {
   let kas = await response.json();
   var judulRincian = document.querySelector("#judulRincian");
   var judulPeriode = document.querySelector("#judulPeriode");
-  judulRincian.innerHTML = `<strong>${kas.judul}</strong>`;
+  judulRincian.innerHTML = kas.judul;
   judulPeriode.innerHTML = `Periode ${ucword(bulan)} ${tahun}`;
   var tbodyKas = document.querySelector("#tbodyKas");
   var tfootKas = document.querySelector("#tfootKas");

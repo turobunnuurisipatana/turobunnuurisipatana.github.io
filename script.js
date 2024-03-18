@@ -1,5 +1,5 @@
 // Website
-var judulWeb = "BTM Turobunnuur Sipatana";
+var judulWeb = "BTM Turobunnuuri Sipatana";
 var logoWeb = "assets/images/logo turobunnur sipatana.png";
 
 // List Kontak

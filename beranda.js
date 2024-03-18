@@ -89,9 +89,9 @@ async function renderBukaPuasa(th){
                             <table class="table table-bordered border border-success table-striped m-0">
                                 <thead>
                                     <tr>
-                                        <th class="bg-success-subtle">HARI KE</th>
-                                        <th class="bg-success-subtle">TANGGAL</th>
-                                        <th class="bg-success-subtle">NAMA PELAKSANA</th>
+                                        <th class="text-center bg-success-subtle">HARI KE</th>
+                                        <th class="text-center bg-success-subtle">TANGGAL</th>
+                                        <th class="text-center bg-success-subtle">NAMA PELAKSANA</th>
                                     </tr>
                                 </thead>
                                 <tbody>`;   
@@ -107,8 +107,8 @@ async function renderBukaPuasa(th){
                             </div>`;
         }
         contentBukaPuasa += `<tr>
-                                <td>${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah}</td>
-                                <td>${formatTanggal(bp.masehi)}</td>
+                                <td class="text-center">${bp.hijriah < 10 ? '0' + bp.hijriah : bp.hijriah}</td>
+                                <td class="text-center">${formatTanggal(bp.masehi)}</td>
                                 <td>${bp.nama}</td>
                             </tr>`;
     })
