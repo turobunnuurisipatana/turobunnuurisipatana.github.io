@@ -68,13 +68,13 @@ async function renderRunningText(th, bl) {
     let dataJadShl = await responseJadShl.json();
     var runningText = document.querySelector('#runningText');
     let listText = [
-        "BTM Turobunnur Sipatana",
+        "BTM Turobunnuuri Sipatana",
         `<i class="bi bi-geo-alt m-0"></i> ${dataAlamat}`,
         `<i class="bi bi-whatsapp m-0"></i> +${dataTelepon}`,
         `<i class="bi bi-envelope-at m-0"></i> ${dataEmail}`,
         `<i class="bi bi-browser-chrome m-0"></i> ${dataWebsite}`,
         `<i class="bi bi-github m-0"></i> @${dataGithub}`,
-        "BTM Turobunnur Sipatana",
+        "BTM Turobunnuuri Sipatana",
     ];
     let liRT = `<div class="bg-success-subtle fixed-bottom shadow py-2 small" role="alert"><marquee class="m-0 d-flex align-item-center">`;
     liRT += `<img src="${logoWeb}" alt="Logo" width="20px" class="rounded-circle mx-2">Jadwal Sholat Hari Ini : ${hari}, ${tanggal} ${bulan} ${tahun}`;
