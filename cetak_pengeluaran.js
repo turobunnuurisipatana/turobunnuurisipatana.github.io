@@ -6,7 +6,13 @@ const getBulan = urlParams.get('bulan');
 const getTahun = urlParams.get('tahun');
 // console.log(ucword(getBulan), getTahun);
 
-
+var kopSurat = document.querySelector('#kopSurat');
+kopSurat.innerHTML = `<td class="text-center align-middle" width="10%"><img src="assets/images/logo turobunnur sipatana.jpg" alt="Logo" width="75px"></td>
+                    <td class="align-middle">
+                        <h5 class="text-center fw-bold m-0">${kopSurat1}</h5>
+                        <h3 class="text-center fw-bold m-0">"${kopSurat2}"</h3>
+                        <small class="d-block text-center small m-0">${dataAlamat}</small>
+                    </td>`;
 
 // DATA KAS 
 async function jsonKas(tahun, bulan) {

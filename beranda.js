@@ -80,7 +80,7 @@ async function renderBukaPuasa(th){
     let contentBukaPuasa = "";
     let warnaTr = "";
     contentBukaPuasa = `<div class="modal-header d-flex justify-content-between align-items-center bg-success bg-gradient text-light py-2 px-3">
-                            <h1 class="modal-title fs-5" id="modalBukaPuasaLabel">Jadwal Buka Puasa Ramadhan ${th} H</h1>
+                            <h1 class="modal-title fs-5" id="modalBukaPuasaLabel">Jadwal Buka Puasa Ramadhan ${tahunHijriah} H</h1>
                             <div>
                                 <a href="cetak_jadwal_puasa.html?tahun=${th}" target="_blank" class="btn btn-sm btn-warning bg-gradient" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cetak"><i class="bi bi-printer"></i></a>
                                 <a href="#" class="btn btn-sm btn-danger bg-gradient" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cetak" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></a>

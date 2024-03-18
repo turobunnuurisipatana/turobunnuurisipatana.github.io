@@ -1,3 +1,14 @@
+var kopSurat = document.querySelector('#kopSurat');
+kopSurat.innerHTML = `<td class="text-center align-middle" width="10%"><img src="assets/images/logo turobunnur sipatana.jpg" alt="Logo" width="75px"></td>
+                    <td class="align-middle">
+                        <h5 class="text-center fw-bold m-0">${kopSurat1}</h5>
+                        <h3 class="text-center fw-bold m-0">"${kopSurat2}"</h3>
+                        <small class="d-block text-center small m-0">${dataAlamat}</small>
+                    </td>`;
+
+var periodeBukaPuasa = document.querySelector('#periodeBukaPuasa');
+periodeBukaPuasa.innerHTML = `${tahunHijriah} H / ${tahun} M`;
+
 // Jadwal Buka Puasa
 async function renderBukaPuasa(th){
     let responseBukaPuasa = await fetch(`data/bukapuasa/${th}.json`);

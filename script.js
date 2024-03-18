@@ -1,9 +1,11 @@
+var kopSurat1 = "BADAN TA’MIRUL MASJID";
+var kopSurat2 = "TUROBUNNUURI SIPATANA";
 // Website
 var judulWeb = "BTM Turobunnuuri Sipatana";
 var logoWeb = "assets/images/logo turobunnur sipatana.png";
 
 // List Kontak
-let dataAlamat = "Jl. Yusuf Hasiru No.686, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96139";
+let dataAlamat = "Jl. Yusuf Hasiru, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo";
 let dataTelepon = "6281234567890";
 let dataEmail = "turobunnuuri.sipatana@gmail.com";
 let dataWebsite = "turobunnuurisipatana.github.io";
