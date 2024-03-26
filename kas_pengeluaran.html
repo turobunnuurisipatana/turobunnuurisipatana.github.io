@@ -35,35 +35,10 @@
         <section class="bg-success text-light p-0">
             <div class="container">
                 <div class="space-lg pt-5 pb-3">
-                    <h1 class="display-4 font-weight-bold m-0 mb-3">KAS MASJID</h1>
-                    <span class="lead mb-0 d-block">Uang Kas Masjid Turobunnuuri Sipatana</span>
-                    <form class="w-25 mt-2 d-flex">
-                        <div class="input-group shadow mr-1">
-                            <select class="custom-select" id="selectBulan" onchange="tampilData()">
-                                <option selected="">BULAN</option>
-                                <option value="januari">Januari</option>
-                                <option value="februari">Februari</option>
-                                <option value="maret">Maret</option>
-                                <option value="april">April</option>
-                                <option value="mei">Mei</option>
-                                <option value="juni">Juni</option>
-                                <option value="juli">Juli</option>
-                                <option value="agustus">Agustus</option>
-                                <option value="september">September</option>
-                                <option value="oktober">Oktober</option>
-                                <option value="November">November</option>
-                                <option value="desember">Desember</option>
-                            </select>
-                            <select class="custom-select" id="selectTahun" onchange="tampilData()">
-                                <option selected="">TAHUN</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                            </select>
-                            <!-- <a href="#modalInputKas" data-bs-toggle="modal" class="btn btn-success border-success bg-gradient"><i class="bi bi-plus-lg"></i> Input</a> -->
-                        </div>
-                        <button class="btn btn-light text-success mr-1 shadow py-1 px-2" id="tombolPilih" type="button" onclick="tampilData()"><i class="bi bi-search m-auto"></i></button>
-                        <a class="btn btn-light text-success shadow py-1 px-2" href="#modalInputKas" data-toggle="modal" data-toggle="tooltip" data-placement="bottom" data-title="Input Kas"><i class="bi bi-pencil-square m-auto"></i></a>
-                      </form>
+                    <h1 class="display-4 font-weight-bold m-0 mb-3">RINCIAN KAS MASJID</h1>
+                    <span class="lead mb-0 d-block" id="leadJudulRincian">Judul Rincian</span>
+                    <span class="lead mb-0 d-block" id="leadPeriodeRincian">Periode</span>
+                    <div class="mt-2" id="divTombolRincian"></div>
                 </div>
             <!--end of row-->
             </div>
@@ -73,31 +48,12 @@
             </svg>
         </section>
         <!--end of section-->
-        <section class="container" id="arusKas">
-            <div class="alert alert-success shadow text-center" role="alert">Pilih Bulan dan Tahun terlebuh dahulu!</div>
+        <section class="container">
+            <div class="table-responsive p-0 rounded-lg overflow-hidden shadow-sm" id="pengeluaranRincian"></div>
             <!--end of container-->
         </section>
         <!--end of section-->
         
-        <!-- Modal Input Kas -->
-        <!-- Modal Buka Puasa -->
-        <div class="modal fade" id="modalInputKas" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalInputKasLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header d-flex justify-content-between align-items-center bg-success text-white py-1 px-2">
-						<h3 class="modal-title" id="modalBukaPuasaLabel">Input Kas Masjid</h3>
-						<a href="#" class="btn btn-sm btn-danger text-white" data-toggle="tooltip" data-placement="bottom" data-title="Tutup" data-dismiss="modal"><i class="bi bi-x-lg"></i></a>
-					</div>
-					<div class="modal-body bg-light p-0">
-						<div class="embed-responsive embed-responsive-16by9 bg-light">
-							<iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSeHeCjttuBAlE7xrPe5l-n-cUbssi5Szjn6e2yMdLIb90fPUg/viewform?embedded=true" allowfullscreen></iframe>
-							<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHeCjttuBAlE7xrPe5l-n-cUbssi5Szjn6e2yMdLIb90fPUg/viewform?embedded=true" width="640" height="1007" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe> -->
-						</div>
-					</div>
-                </div>
-            </div>
-        </div>
-
         <!-- Footer -->
         <footer class="bg-gray text-light pt-4 pb-3"></footer>
     </div>
@@ -138,7 +94,7 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/statis.js"></script>
     <!-- Page -->
-    <script type="text/javascript" src="assets/js/page/kas.js"></script>
+    <script type="text/javascript" src="assets/js/page/kas_pengeluaran.js"></script>
 
   </body>
 
