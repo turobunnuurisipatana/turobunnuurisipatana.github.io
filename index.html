@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BTM Turobunnur Sipatana</title>
         <link rel="icon" href="assets/img/logo turobunnur sipatana.png" type="image/png">
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,10 @@
         </style>
     </head>
     <body>
-        <section style="background-image: url('assets/img/Masjid.png'); background-position: center; background-size: cover;" class="w-full h-screen flex justify-center items-center fixed cursor-default pointer-even-none">
+        <section style="background-image: url('assets/img/Masjid.png'); background-position: center; background-size: cover;" class="w-full h-screen flex justify-center items-center fixed cursor-default">
             <div class="bg-gray-50/50 w-full h-full p-10 flex justify-center items-center relative">
                 <div class="flex flex-col justify-center items-center gap-4">
-                    <img src="assets/img/logo turobunnur sipatana.png" class="w-52 pointer-even-none">
+                    <img src="assets/img/logo turobunnur sipatana.png" class="w-52 pointer-events-none">
                     <h1 class="text-green-800 font-black text-4xl">BTM TUROBUNNUR SIPATANA</h1>
                     <span class="text-sm font-medium">Jl. Yusuf Hasiru, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96121</span>
                     <div class="mt-10 flex justify-center items-center gap-4">
@@ -41,7 +41,7 @@
         <!-- KAS MASJID END -->
 
         <!-- RAMADHAN START -->
-        <div class="absolute fixed overflow-auto w-full h-full bg-white hidden cursor-default pointer-even-none" id="divRamadhan">
+        <div class="absolute fixed overflow-auto w-full h-full bg-white hidden cursor-default" id="divRamadhan">
             <div class="w-full bg-green-700 flex justify-between items-center shadow mb-5">
                 <h1 class="text-white text-xl ms-4 font-bold">Ramadhan 1446 H / 2025 M</h1>
                 <div class="flex justify-center items-center">
@@ -121,7 +121,7 @@
             })
             
             async function renderBukaPuasa(th){
-                let responseBukaPuasa = await fetch(`data/bukapuasa/${th}.json`);
+                let responseBukaPuasa = await fetch(`assets/data/${th}.json`);
                 let dataBukaPuasa = await responseBukaPuasa.json();
                 const divBukaPuasa = document.querySelector('#divBukaPuasa');
                 let contentBukaPuasa = "";
