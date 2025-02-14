@@ -121,7 +121,7 @@
             })
             
             async function renderBukaPuasa(th){
-                let responseBukaPuasa = await fetch(`assets/data/bukapuasa/${th}.json`);
+                let responseBukaPuasa = await fetch(`data/bukapuasa/${th}.json`);
                 let dataBukaPuasa = await responseBukaPuasa.json();
                 const divBukaPuasa = document.querySelector('#divBukaPuasa');
                 let contentBukaPuasa = "";
