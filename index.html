@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BTM Turobunnur Sipatana</title>
+        <link rel="icon" href="assets/img/logo turobunnur sipatana.png" type="image/png">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+                width: 0px;
+            }
+
+            * {
+                /* font-family: 'Poppins', sans-serif; */
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <section style="background-image: url('assets/img/Masjid.png'); background-position: center; background-size: cover;" class="w-full h-screen flex justify-center items-center fixed cursor-default">
+            <div class="bg-gray-50/50 w-full h-full p-2 flex justify-center items-center relative">
+                <div class="w-8/12 h-full flex flex-col justify-center items-center gap-4 relative">
+                    <img src="assets/img/logo turobunnur sipatana.png" class="w-72 pointer-events-none">
+                    <h1 class="text-green-800 font-black text-5xl">BTM TUROBUNNUR SIPATANA</h1>
+                    <span class="text-base font-bold">Jl. Yusuf Hasiru, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96121</span>
+                    <div class="mt-7 flex justify-center items-center gap-4">
+                        <span class="px-8 py-2 bg-green-700 rounded-l-full rounded-r-full text-white hover:bg-green-600 duration-300 hover:shadow-md cursor-pointer" id="openKas">Kas Masjid</span>
+                        <span class="px-8 py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md cursor-pointer" id="openRamadhan">Ramadhan 1446 H / 2025 M</span>
+                        <a href="https://turabunnur.web.id/home" target="_blank" class="px-8 py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md">Dashboard Admin</a>
+                    </div>
+                    <div class="absolute bottom-0 w-full flex gap-10 justify-center items-center text-green-800 font-black text-2xl">
+                        <span class="tanggalHariIni"></span>
+                        <span class="jamBerjalan"></span>
+                    </div>
+                </div>
+                <div class="w-4/12 h-full flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <div class="relative w-6/12 h-fit bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden">
+                            <div class="w-full text-center p-1">
+                                <h1 class="font-bold text-lg">Jadwal Sholat</h1>
+                                <span class="tanggalHariIni text-sm text-green-800"></span>
+                            </div>
+                            <!-- <iframe id="iframe" title="prayerWidget" class="w-full h-72" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/1643837/shafi/11/0/20.0/18.0"> </iframe> -->
+                            <div class="px-2" id="divJadwalSholat"></div>
+                        </div>
+                        <div class="relative w-6/12 h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden">
+                            <h1 class="font-bold text-lg text-center p-1">Pengumuman</h1>
+                            <div class="w-full h-full px-1 absolute overflow-auto text-xs" id="divPengumuman"></div>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-auto p-2 flex flex-col justify-between items-center"id="divAyatHarian">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KAS MASJID START -->
+        <div class="absolute w-full h-full bg-white hidden" id="divKas">
+            <i class="bi-x-lg absolute p-4 hover:text-red-500 duration-300 cursor-pointer text-gray-300" id="closeKas"></i>
+            <iframe src="https://turabunnur.web.id/" frameborder="0" class="w-full h-full"></iframe>
+        </div>
+        <!-- KAS MASJID END -->
+
+        <!-- RAMADHAN START -->
+        <div class="absolute fixed overflow-auto w-full h-full bg-white hidden cursor-default" id="divRamadhan">
+            <div class="w-full bg-green-700 flex justify-between items-center shadow mb-5">
+                <h1 class="text-white text-xl ms-4 font-bold">Ramadhan 1446 H / 2025 M</h1>
+                <div class="flex justify-center items-center">
+                    <i class="bi-printer text-gray-300 flex justify-center items-center w-10 h-10 cursor-pointer hover:bg-white hover:text-green-700 transition-color duration-300" id="cetakBukaPuasa"></i>
+                    <i class="bi-x-lg text-gray-300 flex justify-center items-center w-10 h-10 cursor-pointer hover:bg-white hover:text-red-500 transition-color duration-300" id="closeRamadhan"></i>    
+                </div>
+            </div>
+            <div class="w-10/12 mx-auto">
+                <h1 class="text-2xl text-center font-bold text-green-800 mb-3 uppercase">Jadwal Buka Puasa</h1>
+                <div id="divBukaPuasa"></div>
+            </div>
+        </div>
+        <!-- RAMADHAN END -->
+
+        <!-- Script Start -->
+         <script src="assets/js/script.js"></script>
+        <!-- Script End -->
+    </body>
+</html>
