@@ -204,7 +204,7 @@ async function renderJadwalSHolat(tanggal) {
   const responseJadwalSHolat = await fetch(urlJadwalSholat);
   const dataJadwalSHolat = await responseJadwalSHolat.json();
   let contentJadwalSHolat = "";
-  contentJadwalSHolat = `<table class="w-full">
+  contentJadwalSHolat = `<table class="w-full text-xs sm:text-sm">
                             <thead>
                                 <tr>
                                     <th class="px-1 w-10/12 text-start bg-green-700 text-white">WAKTU</th>
