@@ -159,12 +159,12 @@ async function renderBukaPuasa(th) {
   const divBukaPuasa = document.querySelector("#divBukaPuasa");
   let contentBukaPuasa = "";
   let warnaTr = "";
-  contentBukaPuasa = `<table class="w-full mb-5">
+  contentBukaPuasa = `<table class="w-full mb-2 sm:mb-5 text-[0.4rem] sm:text-base">
                         <thead>
                             <tr>
-                                <th class="px-2 border border-gray-700 bg-green-700 text-white" width="10%">RAMADHAN HARI KE</th>
-                                <th class="px-2 border border-gray-700 bg-green-700 text-white" width="20%">TANGGAL</th>
-                                <th class="px-2 border border-gray-700 bg-green-700 text-white" width="">PELAKSANA</th>
+                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[10%] sm:w-[10%]">RAMADHAN HARI KE</th>
+                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[15%] sm:w-[18%]">TANGGAL</th>
+                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[75%] sm:w[72%]">NAMA PELAKSANA</th>
                             </tr>
                         </thead>
                         <tbody>`;
@@ -175,9 +175,9 @@ async function renderBukaPuasa(th) {
       warnaTr = "";
     }
     contentBukaPuasa += `<tr class="${warnaTr}">
-                          <td class="${warnaTr} p-2 border border-gray-700 text-center">${bp.hijriyah < 10 ? "0" + bp.hijriyah : bp.hijriyah}</td>
-                          <td class="${warnaTr} p-2 border border-gray-700 text-center">${formatTanggal(bp.masehi)}</td>
-                          <td class="${warnaTr} p-2 border border-gray-700">${bp.nama}</td>
+                          <td class="${warnaTr} p-1 sm:p-2 border border-gray-700 text-center">${bp.hijriyah < 10 ? "0" + bp.hijriyah : bp.hijriyah}</td>
+                          <td class="${warnaTr} p-1 sm:p-2 border border-gray-700 text-center">${formatTanggal(bp.masehi)}</td>
+                          <td class="${warnaTr} p-1 sm:p-2 border border-gray-700">${bp.nama}</td>
                         </tr>`;
   });
   contentBukaPuasa += `</tbody>
