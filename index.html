@@ -24,51 +24,51 @@
     </head>
     <body>
         <section style="background-image: url('assets/img/Masjid.png'); background-position: center; background-size: cover;" class="w-full h-screen flex justify-center items-center fixed cursor-default">
-            <div class="bg-gray-50/50 w-full h-full p-2 flex justify-center items-center relative">
+            <div class="bg-gray-50/50 w-full h-full p-2 flex sm:flex-row flex-col justify-center items-center relative">
                 <div class="w-full sm:w-8/12 h-full flex flex-col justify-center items-center gap-4 relative">
-                    <img src="assets/img/logo turobunnur sipatana.png" class="w-34 sm:w-72 pointer-events-none">
-                    <h1 class="text-green-800 font-black text-2xl sm:text-5xl">BTM TUROBUNNUR SIPATANA</h1>
-                    <p class="text-center text-[0.8rem] sm:text-base font-bold">Jln. Yusuf Hasiru, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96121</p>
-                    <div class="mt-5 flex justify-center items-center gap-1 sm:gap-4">
-                        <span class="px-2 sm:px-8 py-1 sm:py-2 bg-green-700 rounded-l-full rounded-r-full text-white hover:bg-green-600 duration-300 hover:shadow-md cursor-pointer text-[0.7rem] sm:text-base" id="openKas">Kas Masjid</span>
-                        <span class="px-2 sm:px-8 py-1 sm:py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md cursor-pointer text-[0.7rem] sm:text-base" id="openRamadhan">Ramadhan 1446 H / 2025 M</span>
-                        <!-- <a href="https://turabunnur.web.id/home" target="_blank" class="px-2 sm:px-8 py-1 sm:py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md text-[0.7rem] sm:text-base">Dashboard Admin</a> -->
+                    <img src="assets/img/logo turobunnur sipatana.png" class="w-34 sm:w-72 pointer-events-none transition-all duration-300">
+                    <h1 class="text-green-800 text-center font-black text-2xl sm:text-5xl transition-all duration-300">BTM TUROBUNNUR SIPATANA</h1>
+                    <p class="text-center text-[0.9rem] sm:text-base font-bold transition-all duration-300">Jln. Yusuf Hasiru, Kel. Bulotadaa Timur, Kec. Sipatana, Kota Gorontalo, Gorontalo 96121</p>
+                    <div class="mt-2 sm:mt-5 flex justify-center items-center gap-1 sm:gap-4">
+                        <span class="px-2 sm:px-8 py-1 sm:py-2 bg-green-700 rounded-l-full rounded-r-full text-white hover:bg-green-600 hover:shadow-md cursor-pointer text-[0.8rem] sm:text-base transition-all duration-300" id="openKas">Kas Masjid</span>
+                        <span class="px-2 sm:px-8 py-1 sm:py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 hover:shadow-md cursor-pointer text-[0.8rem] sm:text-base transition-all duration-300" id="openRamadhan">Ramadhan 1446 H / 2025 M</span>
+                        <!-- <a href="https://turabunnur.web.id/home" target="_blank" class="px-2 sm:px-8 py-1 sm:py-2 bg-white border border-green-700 rounded-l-full rounded-r-full text-green-700 hover:bg-green-100 duration-300 hover:shadow-md text-[0.8rem] sm:text-base">Dashboard Admin</a> -->
                     </div>
-                    <div class="absolute bottom-0 w-full flex gap-10 justify-between sm:justify-center items-center text-green-800 font-black text-[0.8rem] sm:text-2xl">
+                    <div class="absolute top-0 w-full flex sm:flex-col flex-row justify-between sm:justify-start items-center sm:items-start text-green-800 font-black text-[0.8rem] sm:text-lg transition-all duration-300">
                         <span class="tanggalHariIni"></span>
                         <span class="jamBerjalan"></span>
                     </div>
                 </div>
-                <div class="w-4/12 h-full hidden sm:flex flex-col gap-2 ">
+                <div class="w-full sm:w-4/12 h-full flex flex-col gap-2 ">
                     <div class="flex gap-2">
-                        <div class="relative w-6/12 h-fit bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden">
+                        <div class="relative w-6/12 h-fit bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden transition-all duration-300">
                             <div class="w-full text-center p-1">
-                                <h1 class="font-bold text-lg">Jadwal Sholat</h1>
+                                <h1 class="font-bold text-base sm:text-lg">Jadwal Sholat</h1>
                                 <span class="tanggalHariIni text-sm text-green-800"></span>
                             </div>
                             <!-- <iframe id="iframe" title="prayerWidget" class="w-full h-72" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/1643837/shafi/11/0/20.0/18.0"> </iframe> -->
-                            <div class="px-2" id="divJadwalSholat"></div>
+                            <div class="px-2 text-xs sm:text-base" id="divJadwalSholat"></div>
                         </div>
-                        <div class="relative w-6/12 h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden">
-                            <h1 class="font-bold text-lg text-center p-1">Pengumuman</h1>
+                        <div class="relative w-6/12 h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-hidden transition-all duration-300">
+                            <h1 class="font-bold text-base sm:text-lg text-center p-1">Pengumuman</h1>
                             <div class="w-full h-full px-1 absolute overflow-auto text-xs" id="divPengumuman"></div>
                         </div>
                     </div>
-                    <div class="relative w-full h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-auto p-2 flex flex-col justify-between items-center"id="divAyatHarian">
+                    <div class="relative w-full h-full bg-white/80 rounded-2xl shadow-black/30 shadow-lg overflow-auto p-2 flex flex-col justify-between items-center transition-all duration-300"id="divAyatHarian">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- KAS MASJID START -->
-        <div class="absolute w-full h-full bg-white hidden" id="divKas">
-            <i class="bi-x-lg absolute p-4 hover:text-red-500 duration-300 cursor-pointer text-gray-300" id="closeKas"></i>
+        <div class="absolute left-0 right-0 top-0 bottom-0 size-0 transition-all duration-300 bg-white" id="divKas">
+            <i class="bi-x-lg absolute hidden p-4 hover:text-red-500 duration-300 cursor-pointer text-gray-300" id="closeKas"></i>
             <iframe src="https://turabunnur.web.id/" frameborder="0" class="w-full h-full"></iframe>
         </div>
         <!-- KAS MASJID END -->
 
         <!-- RAMADHAN START -->
-        <div class="absolute fixed overflow-auto w-full h-full hidden bg-white cursor-default" id="divRamadhan">
+        <div class="absolute fixed overflow-auto left-0 right-0 top-0 bottom-0 size-0 transition-all duration-300 bg-white cursor-default" id="divRamadhan">
             <div class="w-full bg-green-700 flex justify-between items-center shadow mb-5">
                 <h1 class="text-white text-xs sm:text-xl ms-2 sm:ms-4 font-bold">Ramadhan 1446 H / 2025 M</h1>
                 <div class="flex justify-center items-center">
