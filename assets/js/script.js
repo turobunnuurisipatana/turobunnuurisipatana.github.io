@@ -52,11 +52,17 @@ const divKas = document.querySelector("#divKas");
 const closeKas = document.querySelector("#closeKas");
 
 openKas.addEventListener("click", function () {
-  divKas.classList.remove("hidden");
+  // divKas.classList.remove("hidden");
+  divKas.classList.remove("size-0");
+  divKas.classList.add("size-full");
+  closeKas.classList.remove("hidden");
 });
 
 closeKas.addEventListener("click", function () {
-  divKas.classList.add("hidden");
+  // divKas.classList.add("hidden");
+  divKas.classList.add("size-0");
+  divKas.classList.remove("size-full");
+  closeKas.classList.add("hidden");
 });
 
 // WAKTU HARI INI
@@ -146,11 +152,15 @@ const divRamadhan = document.querySelector("#divRamadhan");
 const closeRamadhan = document.querySelector("#closeRamadhan");
 
 openRamadhan.addEventListener("click", function () {
-  divRamadhan.classList.remove("hidden");
+  // divRamadhan.classList.remove("hidden");
+  divRamadhan.classList.remove("size-0");
+  divRamadhan.classList.add("size-full");
 });
 
 closeRamadhan.addEventListener("click", function () {
-  divRamadhan.classList.add("hidden");
+  // divRamadhan.classList.add("hidden");
+  divRamadhan.classList.add("size-0");
+  divRamadhan.classList.remove("size-full");
 });
 
 async function renderBukaPuasa(th) {
@@ -159,12 +169,12 @@ async function renderBukaPuasa(th) {
   const divBukaPuasa = document.querySelector("#divBukaPuasa");
   let contentBukaPuasa = "";
   let warnaTr = "";
-  contentBukaPuasa = `<table class="w-full mb-2 sm:mb-5 text-[0.4rem] sm:text-base">
+  contentBukaPuasa = `<table class="w-full mb-2 sm:mb-5 text-[0.5rem] sm:text-base">
                         <thead>
                             <tr>
                                 <th class="px-2 border border-gray-700 bg-green-700 text-white w-[10%] sm:w-[10%]">RAMADHAN HARI KE</th>
-                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[15%] sm:w-[18%]">TANGGAL</th>
-                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[75%] sm:w[72%]">NAMA PELAKSANA</th>
+                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[25%] sm:w-[18%]">TANGGAL</th>
+                                <th class="px-2 border border-gray-700 bg-green-700 text-white w-[65%] sm:w[72%]">NAMA PELAKSANA</th>
                             </tr>
                         </thead>
                         <tbody>`;
@@ -194,7 +204,7 @@ async function renderJadwalSHolat(tanggal) {
   const responseJadwalSHolat = await fetch(urlJadwalSholat);
   const dataJadwalSHolat = await responseJadwalSHolat.json();
   let contentJadwalSHolat = "";
-  contentJadwalSHolat = `<table class="w-full text-sm">
+  contentJadwalSHolat = `<table class="w-full">
                             <thead>
                                 <tr>
                                     <th class="px-1 w-10/12 text-start bg-green-700 text-white">WAKTU</th>
@@ -289,10 +299,10 @@ async function renderAyatHarian() {
   const responseAyatHarian = await fetch(`https://quran-api-id.vercel.app/surahs/${dataSurah.number}/ayahs/${ayahs}`);
   const dataAyatHarian = await responseAyatHarian.json();
   const ah = dataAyatHarian;
-  let contentAyatHarian = `<h1 class="font-bold text-lg text-center p-1">Ayat Harian</h1>
-                            <div class="flex flex-col gap-2 px-4">
-                              <p class="text-center text-2xl">${ah.arab}</>
-                              <p class="text-center text-sm">${ah.translation}</p>
+  let contentAyatHarian = `<h1 class="font-bold text-base sm:text-lg text-center p-1">Ayat Harian</h1>
+                            <div class="flex flex-col gap-1 sm:gap-2 gap-2 sm:px-4">
+                              <p class="text-center text-xl sm:text-2xl">${ah.arab}</>
+                              <p class="text-center text-xs sm:text-sm">${ah.translation}</p>
                             </div>
                             <p class="text-center italic text-xs mt-2">-- QS. ${dataSurah.name} (${dataSurah.number}:${ah.number.inSurah}) --</p>`;
 
